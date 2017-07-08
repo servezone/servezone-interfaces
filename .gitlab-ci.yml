@@ -69,3 +69,4 @@ pages:
     expire_in: 1 week
     paths:
     - public
+  allow_failure: true

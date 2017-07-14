@@ -1,12 +1,20 @@
 import { IAppJSON } from 'smartapp';
 /**
- * the interface for adding an app to a servezone cluster
+ * the socket function interface for adding an app to a servezone cluster
  */
-export interface addApp {
+export interface ISocketAddApp {
     shipzoneData: any;
     appJSON: IAppJSON;
 }
-export interface updateApp {
+/**
+ * the socket function interface for updating an app
+ */
+export interface ISocketUpdateApp {
     shipzoneData: any;
     appJSON: IAppJSON;
+}
+/**
+ * the socket function interface for checking for an app
+ */
+export interface ISocketCheckApp {
 }

@@ -23,5 +23,6 @@ export interface ISocketUpdateApp {
  * the socket function interface for checking for an app
  */
 export interface ISocketCheckApp {
-
+  shipzoneData
+  appJSON: IAppJSON
 }

@@ -1,8 +1,8 @@
-import { expect, tap } from 'tapbundle'
-import '../dist/index'
+import { expect, tap } from '@pushrocks/tapbundle';
+import '../dist/index';
 
 tap.test('first test', async () => {
-  console.log('hey')
-})
+  console.log('hey');
+});
 
-tap.start()
+tap.start();

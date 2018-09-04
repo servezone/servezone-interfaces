@@ -1,19 +1,22 @@
 {
-  "name": "servezone-interfaces",
+  "name": "@servezone/servezone-interfaces",
   "version": "1.0.9",
+  "private": false,
   "description": "TypeScript interfaces to interact with servezone.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "author": "Lossless GmbH",
   "license": "MIT",
   "scripts": {
-    "test": "(npmts --notest)"
+    "test": "(tstest test/)",
+    "build": "(tsbuild)"
   },
   "devDependencies": {
-    "tapbundle": "^1.1.0"
+    "@gitzone/tsbuild": "^2.0.22",
+    "@gitzone/tsrun": "^1.1.12",
+    "@gitzone/tstest": "^1.0.15",
+    "@pushrocks/tapbundle": "^3.0.7",
+    "@types/node": "^10.9.4"
   },
-  "dependencies": {
-    "smartapp": "^1.0.9",
-    "typings-global": "^1.0.19"
-  }
+  "dependencies": {}
 }

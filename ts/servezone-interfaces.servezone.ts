@@ -1,7 +1,7 @@
 import * as plugins from './servezone-interfaces.plugins';
 
 // interfaces
-import { IAppJSON } from 'smartapp';
+import { IAppJSON } from '@servezone/appjson';
 import { IShipZoneData } from './servezone-interfaces.shipzone';
 
 /**

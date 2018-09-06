@@ -18,5 +18,7 @@
     "@pushrocks/tapbundle": "^3.0.7",
     "@types/node": "^10.9.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@servezone/appjson": "^1.0.22"
+  }
 }

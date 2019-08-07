@@ -1,2 +1,2 @@
-export * from './servezone-interfaces.servezone';
-export * from './servezone-interfaces.shipzone';
+export * from './servezone-interfaces.requests';
+export * from './servezone-interfaces.versionmanager';

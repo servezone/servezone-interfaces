@@ -12,13 +12,13 @@
     "build": "(tsbuild)"
   },
   "devDependencies": {
-    "@gitzone/tsbuild": "^2.0.22",
-    "@gitzone/tsrun": "^1.1.12",
-    "@gitzone/tstest": "^1.0.15",
-    "@pushrocks/tapbundle": "^3.0.7",
-    "@types/node": "^10.9.4"
+    "@gitzone/tsbuild": "^2.1.11",
+    "@gitzone/tsrun": "^1.2.8",
+    "@gitzone/tstest": "^1.0.24",
+    "@pushrocks/tapbundle": "^3.0.11",
+    "@types/node": "^12.7.0",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0"
   },
-  "dependencies": {
-    "@servezone/appjson": "^1.0.22"
-  }
+  "dependencies": {}
 }

@@ -1,6 +1,6 @@
 {
   "name": "@servezone/servezone-interfaces",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "private": false,
   "description": "TypeScript interfaces to interact with servezone.",
   "main": "dist/index.js",

@@ -9,7 +9,8 @@
   "license": "MIT",
   "scripts": {
     "test": "(tstest test/)",
-    "build": "(tsbuild)"
+    "build": "(tsbuild)",
+    "publishFromLocal": "npm run build && npm publish && rm -r dist/"
   },
   "devDependencies": {
     "@gitzone/tsbuild": "^2.1.11",

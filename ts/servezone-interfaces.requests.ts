@@ -7,10 +7,7 @@ export const versionManagerRoute: string = '/versionmanager';
 // versionmanager
 export interface IRequest_VersionUpdate {
   method: 'update';
-  requestData: {
-    dockerImageUrl: string;
-    version: string;
-  };
+  requestData: versionManagerInterfaces.IVersionData;
   responseData: {};
 }
 

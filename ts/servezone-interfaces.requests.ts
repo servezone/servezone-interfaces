@@ -46,7 +46,5 @@ export interface IRequest_CoreflowconfigStatusupdate {
   requestData: {
     clusterIdentifier: coreflowManagerInterfaces.IClusterIdentifier;
   };
-  responseData: {
-
-  };
+  responseData: {};
 }

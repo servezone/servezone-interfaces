@@ -33,6 +33,14 @@ export interface IRequest_ConfigGet {
 }
 
 // coreflowmanager
+export interface IRequest_CoreflowconfigIdentity {
+  method: 'identity',
+  request: {};
+  response: {
+    clusterIdentifier: coreflowManagerInterfaces.IClusterIdentifier;
+  };
+}
+
 export interface IRequest_CoreflowconfigGet {
   method: 'get';
   requestData: {

@@ -1,14 +1,15 @@
 import * as plugins from './servezone-interfaces.plugins';
 
-import * as coreflowManagerInterfaces from './servezone-interfaces.cloudlycoreflowmanager';
-import * as versionManagerInterfaces from './servezone-interfaces.cloudlyversionmanager';
+import * as cloudlyConfigManagerInterfaces from './servezone-interfaces.cloudlyconfigmanager';
+import * as cloudlyCoreflowManagerInterfaces from './servezone-interfaces.coreflow';
+import * as cloudlyVersionManagerInterfaces from './servezone-interfaces.cloudlyversionmanager';
 
 export const versionManagerRoute: string = '/versionmanager';
 
-// cloudlyversionmanager
+// cloudly Versionmanager
 export interface IRequest_VersionUpdate {
   method: 'update';
-  requestData: versionManagerInterfaces.IVersionData;
+  requestData: cloudlyVersionManagerInterfaces.IVersionData;
   responseData: {};
 }
 
@@ -17,42 +18,44 @@ export interface IRequest_VersionGet {
   requestData: {
     dockerImageUrl: string;
   };
-  responseData: versionManagerInterfaces.IVersionData;
+  responseData: cloudlyVersionManagerInterfaces.IVersionData;
 }
 
-// cloudlyConfigManager
+// cloudly ConfigManager
 export interface IRequest_ConfigGet {
   method: 'get';
   requestData: {
-    configIdentifier: string;
+    type: cloudlyConfigManagerInterfaces.TConfigType;
+    configIdentifier: string
   };
   responseData: {
     configIdentifier: string;
-    configData: any;
+    configData: | cloudlyConfigManagerInterfaces.IServerConfig
+    | cloudlyConfigManagerInterfaces.ICloreflowConfig
+    | cloudlyConfigManagerInterfaces.IAppConfig;
   };
 }
 
-// cloudlyCoreflowmanager
-export interface IRequest_CoreflowconfigIdentity {
-  method: 'identity',
+// cloudly CoreflowManager
+
+/**
+ * get the identity that then will be used to get the config
+ */
+export interface IRequest_CoreflowConfigIdentity {
+  method: 'identity';
   request: {};
   response: {
-    clusterIdentifier: coreflowManagerInterfaces.IClusterIdentifier;
+    clusterIdentifier: cloudlyCoreflowManagerInterfaces.IClusterIdentifier;
   };
 }
 
-export interface IRequest_CoreflowconfigGet {
-  method: 'get';
-  requestData: {
-    clusterIdentifier: coreflowManagerInterfaces.IClusterIdentifier;
-  };
-  responseData: {};
-}
-
+/**
+ * a status update dashboard
+ */
 export interface IRequest_CoreflowconfigStatusupdate {
   method: 'statusupdate';
   requestData: {
-    clusterIdentifier: coreflowManagerInterfaces.IClusterIdentifier;
+    clusterIdentifier: cloudlyCoreflowManagerInterfaces.IClusterIdentifier;
   };
   responseData: {};
 }

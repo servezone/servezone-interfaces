@@ -1,6 +1,6 @@
 // managers
 export * from './servezone-interfaces.cloudlyconfigmanager';
-export * from './servezone-interfaces.cloudlycoreflowmanager';
+export * from './servezone-interfaces.coreflow';
 export * from './servezone-interfaces.cloudlyversionmanager';
 
 // local

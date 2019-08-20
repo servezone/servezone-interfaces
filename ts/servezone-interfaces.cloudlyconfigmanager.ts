@@ -1,4 +1,8 @@
-export interface IAppConfig {};
+import * as coreflowInterfaces from './servezone-interfaces.coreflow';
+
+export interface IAppConfig {}
+
+export interface ICloreflowConfig {}
 
 export interface IServerConfig {
   /**

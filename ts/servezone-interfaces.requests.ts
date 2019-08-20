@@ -1,11 +1,11 @@
 import * as plugins from './servezone-interfaces.plugins';
 
-import * as coreflowManagerInterfaces from './servezone-interfaces.coreflowmanager';
-import * as versionManagerInterfaces from './servezone-interfaces.versionmanager';
+import * as coreflowManagerInterfaces from './servezone-interfaces.cloudlycoreflowmanager';
+import * as versionManagerInterfaces from './servezone-interfaces.cloudlyversionmanager';
 
 export const versionManagerRoute: string = '/versionmanager';
 
-// versionmanager
+// cloudlyversionmanager
 export interface IRequest_VersionUpdate {
   method: 'update';
   requestData: versionManagerInterfaces.IVersionData;
@@ -20,7 +20,7 @@ export interface IRequest_VersionGet {
   responseData: versionManagerInterfaces.IVersionData;
 }
 
-// configManager
+// cloudlyConfigManager
 export interface IRequest_ConfigGet {
   method: 'get';
   requestData: {
@@ -32,7 +32,7 @@ export interface IRequest_ConfigGet {
   };
 }
 
-// coreflowmanager
+// cloudlyCoreflowmanager
 export interface IRequest_CoreflowconfigIdentity {
   method: 'identity',
   request: {};

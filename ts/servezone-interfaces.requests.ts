@@ -7,13 +7,13 @@ import * as cloudlyVersionManagerInterfaces from './servezone-interfaces.cloudly
 export const versionManagerRoute: string = '/versionmanager';
 
 // cloudly Versionmanager
-export interface IRequest_VersionUpdate {
+export interface ITypedRequest_Any_VersionUpdate {
   method: 'update';
   requestData: cloudlyVersionManagerInterfaces.IVersionData;
   responseData: {};
 }
 
-export interface IRequest_VersionGet {
+export interface ITypedRequest_Any_VersionGet {
   method: 'get';
   requestData: {
     dockerImageUrl: string;
@@ -22,26 +22,27 @@ export interface IRequest_VersionGet {
 }
 
 // cloudly ConfigManager
-export interface IRequest_ConfigGet {
+export interface ITypedRequest_Any_ConfigGet {
   method: 'get';
   requestData: {
     type: cloudlyConfigManagerInterfaces.TConfigType;
-    configIdentifier: string
+    configIdentifier: string;
   };
   responseData: {
     configIdentifier: string;
-    configData: | cloudlyConfigManagerInterfaces.IServerConfig
-    | cloudlyConfigManagerInterfaces.ICloreflowConfig
-    | cloudlyConfigManagerInterfaces.IAppConfig;
+    configData:
+      | cloudlyConfigManagerInterfaces.IServerConfig
+      | cloudlyConfigManagerInterfaces.ICloreflowConfig
+      | cloudlyConfigManagerInterfaces.IAppConfig;
   };
 }
 
-// cloudly CoreflowManager
+// cloudly Coreflow
 
 /**
  * get the identity that then will be used to get the config
  */
-export interface IRequest_CoreflowConfigIdentity {
+export interface ITypedRequest_Coreflow_ConfigIdentity {
   method: 'identity';
   request: {};
   response: {
@@ -52,10 +53,12 @@ export interface IRequest_CoreflowConfigIdentity {
 /**
  * a status update dashboard
  */
-export interface IRequest_CoreflowconfigStatusupdate {
+export interface ITypedRequest_CoreflowconfigStatusupdate {
   method: 'statusupdate';
   requestData: {
     clusterIdentifier: cloudlyCoreflowManagerInterfaces.IClusterIdentifier;
   };
   responseData: {};
 }
+
+// ServerConfig

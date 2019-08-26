@@ -6,14 +6,14 @@ import * as cloudlyVersionManagerInterfaces from './servezone-interfaces.cloudly
 
 export const versionManagerRoute: string = '/versionmanager';
 
-// cloudly Versionmanager
-export interface IRequest_VersionUpdate {
+// for target cloudly
+export interface IRequest_Any_Cloudly_VersionManager_Update {
   method: 'update';
   requestData: cloudlyVersionManagerInterfaces.IVersionData;
   responseData: {};
 }
 
-export interface IRequest_VersionGet {
+export interface IRequest_Any_Cloudly_VersionManager_Get {
   method: 'get';
   requestData: {
     dockerImageUrl: string;
@@ -21,8 +21,7 @@ export interface IRequest_VersionGet {
   responseData: cloudlyVersionManagerInterfaces.IVersionData;
 }
 
-// cloudly ConfigManager
-export interface IRequest_ConfigGet {
+export interface IRequest_Any_Cloudly_ConfigManager_Get {
   method: 'get';
   requestData: {
     type: cloudlyConfigManagerInterfaces.TConfigType;
@@ -36,12 +35,10 @@ export interface IRequest_ConfigGet {
   };
 }
 
-// cloudly CoreflowManager
-
 /**
  * get the identity that then will be used to get the config
  */
-export interface IRequest_CoreflowConfigIdentity {
+export interface IRequest_Coreflow_Cloudly_CoreflowManager_Identity {
   method: 'identity';
   request: {};
   response: {
@@ -52,7 +49,7 @@ export interface IRequest_CoreflowConfigIdentity {
 /**
  * a status update dashboard
  */
-export interface IRequest_CoreflowconfigStatusupdate {
+export interface IRequest_Coreflow_Cloudly_CoreflowManager_Statusupdate {
   method: 'statusupdate';
   requestData: {
     clusterIdentifier: cloudlyCoreflowManagerInterfaces.IClusterIdentifier;

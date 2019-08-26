@@ -9,25 +9,25 @@ export const versionManagerRoute: string = '/versionmanager';
 // for target cloudly
 export interface IRequest_Any_Cloudly_VersionManager_Update {
   method: 'update';
-  requestData: cloudlyVersionManagerInterfaces.IVersionData;
-  responseData: {};
+  request: cloudlyVersionManagerInterfaces.IVersionData;
+  response: {};
 }
 
 export interface IRequest_Any_Cloudly_VersionManager_Get {
   method: 'get';
-  requestData: {
+  request: {
     dockerImageUrl: string;
   };
-  responseData: cloudlyVersionManagerInterfaces.IVersionData;
+  response: cloudlyVersionManagerInterfaces.IVersionData;
 }
 
 export interface IRequest_Any_Cloudly_ConfigManager_Get {
   method: 'get';
-  requestData: {
+  request: {
     type: cloudlyConfigManagerInterfaces.TConfigType;
     configIdentifier: string;
   };
-  responseData: {
+  response: {
     configIdentifier: string;
     configData:
       | cloudlyConfigManagerInterfaces.IServerConfig
@@ -52,10 +52,10 @@ export interface IRequest_Coreflow_Cloudly_CoreflowManager_Identity {
  */
 export interface IRequest_Coreflow_Cloudly_CoreflowManager_Statusupdate {
   method: 'statusupdate';
-  requestData: {
+  request: {
     clusterIdentifier: cloudlyCoreflowManagerInterfaces.IClusterIdentifier;
   };
-  responseData: {};
+  response: {};
 }
 
 export interface IRequest_Serverconfig_Cloudly_ServerconfigManager_Identity {

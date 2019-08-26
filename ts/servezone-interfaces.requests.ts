@@ -25,13 +25,14 @@ export interface IRequest_Any_Cloudly_ConfigManager_Get {
   method: 'get';
   requestData: {
     type: cloudlyConfigManagerInterfaces.TConfigType;
-    configIdentifier: string
+    configIdentifier: string;
   };
   responseData: {
     configIdentifier: string;
-    configData: | cloudlyConfigManagerInterfaces.IServerConfig
-    | cloudlyConfigManagerInterfaces.ICloreflowConfig
-    | cloudlyConfigManagerInterfaces.IAppConfig;
+    configData:
+      | cloudlyConfigManagerInterfaces.IServerConfig
+      | cloudlyConfigManagerInterfaces.ICloreflowConfig
+      | cloudlyConfigManagerInterfaces.IAppConfig;
   };
 }
 
@@ -56,3 +57,5 @@ export interface IRequest_Coreflow_Cloudly_CoreflowManager_Statusupdate {
   };
   responseData: {};
 }
+
+// ServerConfig

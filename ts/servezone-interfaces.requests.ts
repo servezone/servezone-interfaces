@@ -58,4 +58,10 @@ export interface IRequest_Coreflow_Cloudly_CoreflowManager_Statusupdate {
   responseData: {};
 }
 
-// ServerConfig
+export interface IRequest_Serverconfig_Cloudly_ServerconfigManager_Identity {
+  method: 'identity';
+  request: {};
+  response: {
+    clusterIdentifier: cloudlyCoreflowManagerInterfaces.IClusterIdentifier;
+  };
+}

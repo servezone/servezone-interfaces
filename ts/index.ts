@@ -1,7 +1,5 @@
-// managers
-export * from './servezone-interfaces.cloudlyconfigmanager';
-export * from './servezone-interfaces.coreflow';
-export * from './servezone-interfaces.cloudlyversionmanager';
+// version
+export * from './servezone-interfaces.version';
 
 // traffic
 export * from './servezone-interfaces.traffic';

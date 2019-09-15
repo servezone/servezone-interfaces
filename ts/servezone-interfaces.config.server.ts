@@ -1,15 +1,3 @@
-import * as coreflowInterfaces from './servezone-interfaces.coreflow';
-
-export type TConfigType = 'server' | 'coreflow' | 'app';
-
-export interface IAppConfig {
-  type: 'app';
-}
-
-export interface ICloreflowConfig {
-  type: 'coreflow';
-}
-
 export interface IServerConfig {
   type: 'server';
 

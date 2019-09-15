@@ -1,15 +1,15 @@
 import * as plugins from './servezone-interfaces.plugins';
 
-import * as cloudlyConfigManagerInterfaces from './servezone-interfaces.cloudlyconfigmanager';
-import * as cloudlyCoreflowManagerInterfaces from './servezone-interfaces.coreflow';
-import * as cloudlyVersionManagerInterfaces from './servezone-interfaces.cloudlyversionmanager';
+import * as clusterInterfaces from './servezone-interfaces.cluster';
+import * as configInterfaces from './servezone-interfaces.config';
+import * as versionInterfaces from './servezone-interfaces.version';
 
 export const versionManagerRoute: string = '/versionmanager';
 
 // for target cloudly
 export interface IRequest_Any_Cloudly_VersionManager_Update {
   method: 'update';
-  request: cloudlyVersionManagerInterfaces.IVersionData;
+  request: versionInterfaces.IVersionData;
   response: {};
 }
 
@@ -18,21 +18,21 @@ export interface IRequest_Any_Cloudly_VersionManager_Get {
   request: {
     dockerImageUrl: string;
   };
-  response: cloudlyVersionManagerInterfaces.IVersionData;
+  response: versionInterfaces.IVersionData;
 }
 
 export interface IRequest_Any_Cloudly_ConfigManager_Get {
   method: 'get';
   request: {
-    type: cloudlyConfigManagerInterfaces.TConfigType;
+    type: configInterfaces.TConfigType;
     configIdentifier: string;
   };
   response: {
     configIdentifier: string;
     configData:
-      | cloudlyConfigManagerInterfaces.IServerConfig
-      | cloudlyConfigManagerInterfaces.ICloreflowConfig
-      | cloudlyConfigManagerInterfaces.IAppConfig;
+      | configInterfaces.IServerConfig
+      | configInterfaces.ICloreflowConfig
+      | configInterfaces.IServiceConfig;
   };
 }
 
@@ -43,7 +43,7 @@ export interface IRequest_Coreflow_Cloudly_CoreflowManager_Identity {
   method: 'identity';
   request: {};
   response: {
-    clusterIdentifier: cloudlyCoreflowManagerInterfaces.IClusterIdentifier;
+    clusterIdentifier: clusterInterfaces.IClusterIdentifier;
   };
 }
 
@@ -53,7 +53,7 @@ export interface IRequest_Coreflow_Cloudly_CoreflowManager_Identity {
 export interface IRequest_Coreflow_Cloudly_CoreflowManager_Statusupdate {
   method: 'statusupdate';
   request: {
-    clusterIdentifier: cloudlyCoreflowManagerInterfaces.IClusterIdentifier;
+    clusterIdentifier: clusterInterfaces.IClusterIdentifier;
   };
   response: {};
 }
@@ -62,6 +62,6 @@ export interface IRequest_Serverconfig_Cloudly_ServerconfigManager_Identity {
   method: 'identity';
   request: {};
   response: {
-    clusterIdentifier: cloudlyCoreflowManagerInterfaces.IClusterIdentifier;
+    clusterIdentifier: clusterInterfaces.IClusterIdentifier;
   };
 }

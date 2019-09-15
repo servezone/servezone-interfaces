@@ -1,11 +1,18 @@
-// version
-export * from './servezone-interfaces.version';
+// config
+import * as configInterfaces from './servezone-interfaces.config';
+
+// request
+import * as requestInterfaces from './servezone-interfaces.request';
 
 // traffic
-export * from './servezone-interfaces.traffic';
+import * as trafficInterfaces from './servezone-interfaces.traffic';
 
-// requests
-export * from './servezone-interfaces.requests';
+// version
+import * as versionInterfaces from './servezone-interfaces.version';
 
-// config
-export * from './servezone-interfaces.config.cluster';
+export {
+  configInterfaces as config,
+  requestInterfaces as request,
+  trafficInterfaces as traffic,
+  versionInterfaces as version,
+};

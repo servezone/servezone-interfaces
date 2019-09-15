@@ -44,6 +44,7 @@ export interface IRequest_Coreflow_Cloudly_CoreflowManager_Identity {
   request: {};
   response: {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
+    secretKey: string
   };
 }
 
@@ -63,5 +64,6 @@ export interface IRequest_Serverconfig_Cloudly_ServerconfigManager_Identity {
   request: {};
   response: {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
+    secretKey: string;
   };
 }

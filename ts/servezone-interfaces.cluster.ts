@@ -3,5 +3,6 @@ export interface IClusterStatus {
 }
 
 export interface IClusterIdentifier {
-  clustername: string;
+  clusterName: string;
+  secretKey: string;
 }

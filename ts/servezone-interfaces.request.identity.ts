@@ -26,5 +26,7 @@ export interface IRequest_Coreflow_Cloudly_CoreflowManager_Identity {
   request: {
     jumpCode: string;
   };
-  response: clusterInterfaces.IClusterIdentifier;
+  response: {
+    clusterIdentifier: clusterInterfaces.IClusterIdentifier;
+  };
 }

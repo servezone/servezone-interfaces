@@ -9,7 +9,9 @@ import * as clusterInterfaces from './servezone-interfaces.cluster';
  */
 export interface IRequest_Serverconfig_Cloudly_ServerconfigManager_Identity {
   method: 'identity';
-  request: {};
+  request: {
+    jumpCode: string;
+  };
   response: {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
     secretKey: string;
@@ -21,7 +23,9 @@ export interface IRequest_Serverconfig_Cloudly_ServerconfigManager_Identity {
  */
 export interface IRequest_Coreflow_Cloudly_CoreflowManager_Identity {
   method: 'identity';
-  request: {};
+  request: {
+    jumpCode: string;
+  };
   response: {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
     secretKey: string

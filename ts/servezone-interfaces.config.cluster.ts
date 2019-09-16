@@ -3,6 +3,8 @@ export interface IClusterConfig {
   zone: 'servezone' | 'gitzone' | 'shipzone' | 'umbrellazone' | 'trafficzone' | 'proxyzone';
   type: 'cluster';
   secretKey: string;
+  jumpCode: string;
+  jumpCodeUsedAt: number;
   manager_domain: string;
   manager_ip: string;
   containers: IClusterConfigContainer[];

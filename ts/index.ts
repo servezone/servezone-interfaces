@@ -1,3 +1,6 @@
+// cluster
+import * as clusterInterfaces from './servezone-interfaces.cluster';
+
 // config
 import * as configInterfaces from './servezone-interfaces.config';
 
@@ -11,6 +14,7 @@ import * as trafficInterfaces from './servezone-interfaces.traffic';
 import * as versionInterfaces from './servezone-interfaces.version';
 
 export {
+  clusterInterfaces as cluster,
   configInterfaces as config,
   requestInterfaces as request,
   trafficInterfaces as traffic,

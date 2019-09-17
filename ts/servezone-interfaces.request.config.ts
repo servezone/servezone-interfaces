@@ -7,11 +7,7 @@ export interface IRequest_Any_Cloudly_ConfigManager_GetServerConfig {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
   };
   response: {
-    configIdentifier: string;
-    configData:
-      | configInterfaces.IServerConfig
-      | configInterfaces.ICloreflowConfig
-      | configInterfaces.IServiceConfig;
+    configData: configInterfaces.IServerConfig
   };
 }
 
@@ -21,10 +17,6 @@ export interface IRequest_Any_Cloudly_ConfigManager_GetClusterConfig {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
   };
   response: {
-    configIdentifier: string;
-    configData:
-      | configInterfaces.IServerConfig
-      | configInterfaces.ICloreflowConfig
-      | configInterfaces.IServiceConfig;
+    configData: configInterfaces.IClusterConfig
   };
 }

@@ -14,7 +14,6 @@ export interface IRequest_Serverconfig_Cloudly_ServerconfigManager_Identity {
   };
   response: {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
-    secretKey: string;
   };
 }
 

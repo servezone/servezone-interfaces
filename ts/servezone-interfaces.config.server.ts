@@ -14,7 +14,7 @@ export interface IServerConfig {
   /**
    * the time to check in again
    */
-  checkInAgain: 600000;
+  checkInAgain: number;
 
   sshKeys: IServezoneSshKey[];
 }

@@ -8,6 +8,10 @@ export interface IClusterConfig {
   manager_domain: string;
   manager_ip: string;
   containers: IClusterConfigContainer[];
+  acmeInfo: {
+    serverAddress: string;
+    serverSecret: string;
+  };
   registryInfo: {
     serverAddress: string;
     username: string;

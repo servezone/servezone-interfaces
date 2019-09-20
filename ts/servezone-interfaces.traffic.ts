@@ -1,7 +1,8 @@
-export interface ILocalClusterTrafficRoute {
-  destinationIP: string;
-  destinationPort: number;
-  hostName: string;
-  sslPrivateKey: string;
-  sslPublicKey: string;
-}
+import * as plugins from './servezone-interfaces.plugins';
+import {
+  IReverseProxyConfig
+} from '@tsclass/tsclass';
+
+export {
+  IReverseProxyConfig
+};

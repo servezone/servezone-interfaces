@@ -26,4 +26,5 @@ export interface IClusterConfigContainer {
     web: number
   };
   domains: string[];
+  secrets: {[key: string]: string};
 }

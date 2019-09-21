@@ -20,6 +20,7 @@ export interface IClusterConfig {
 }
 
 export interface IClusterConfigContainer {
+  name: string;
   image: string;
   ports: {
     web: number

@@ -4,7 +4,7 @@ import * as configInterfaces from './servezone-interfaces.config';
 export interface IRequest_Any_Cloudly_ConfigManager_GetServerConfig {
   method: 'getServerConfig';
   request: {
-    jumpCode: string;
+    clusterIdentifier: clusterInterfaces.IClusterIdentifier;
   };
   response: {
     configData: configInterfaces.IServerConfig

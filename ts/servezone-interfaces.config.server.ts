@@ -1,3 +1,5 @@
+import { IDockerRegistryInfo } from "./servezone-interfaces.config.docker";
+
 export interface IServerConfig {
   type: 'server';
 
@@ -16,7 +18,12 @@ export interface IServerConfig {
    */
   checkInAgain: number;
 
+  /**
+   * a list of SSH keys to deploy
+   */
   sshKeys: IServezoneSshKey[];
+
+  dockerRegistryInfo: IDockerRegistryInfo;
 }
 
 export interface IServezoneSshKey {

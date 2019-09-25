@@ -1,3 +1,5 @@
+import { IDockerRegistryInfo } from "./servezone-interfaces.config.docker";
+
 export interface IClusterConfig {
   name: string;
   zone: 'servezone' | 'gitzone' | 'shipzone' | 'umbrellazone' | 'trafficzone' | 'proxyzone';
@@ -12,11 +14,7 @@ export interface IClusterConfig {
     serverAddress: string;
     serverSecret: string;
   };
-  registryInfo: {
-    serverAddress: string;
-    username: string;
-    password: string;
-  };
+  registryInfo: IDockerRegistryInfo;
 }
 
 export interface IClusterConfigContainer {

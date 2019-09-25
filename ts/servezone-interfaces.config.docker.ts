@@ -1,5 +1,5 @@
 export interface IDockerRegistryInfo {
-  serverAddress: string;
+  serveraddress: string;
   username: string;
   password: string;
 }

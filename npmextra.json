@@ -7,9 +7,9 @@
     "module": {
       "githost": "gitlab.com",
       "gitscope": "servezone",
-      "gitrepo": "servezone-interfaces",
+      "gitrepo": "interfaces",
       "shortDescription": "TypeScript interfaces to interact with servezone.",
-      "npmPackagename": "@servezone/servezone-interfaces",
+      "npmPackagename": "@servezone/interfaces",
       "license": "MIT"
     }
   }

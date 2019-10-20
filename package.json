@@ -1,5 +1,5 @@
 {
-  "name": "@servezone/servezone-interfaces",
+  "name": "@servezone/interfaces",
   "version": "2.0.51",
   "private": false,
   "description": "TypeScript interfaces to interact with servezone.",

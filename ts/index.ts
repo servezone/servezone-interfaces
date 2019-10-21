@@ -13,10 +13,14 @@ import * as trafficInterfaces from './servezone-interfaces.traffic';
 // version
 import * as versionInterfaces from './servezone-interfaces.version';
 
+// status
+import * as statusInterfaces from './servezone-interfaces.status';
+
 export {
   clusterInterfaces as cluster,
   configInterfaces as config,
   requestInterfaces as request,
   trafficInterfaces as traffic,
   versionInterfaces as version,
+  statusInterfaces as status
 };

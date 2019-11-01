@@ -21,7 +21,8 @@ export interface IClusterConfigContainer {
   name: string;
   image: string;
   ports: {
-    web: number
+    web: number;
+    custom: { [domain: string]: string };
   };
   domains: string[];
   secrets: {[key: string]: string};

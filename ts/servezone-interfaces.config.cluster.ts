@@ -22,7 +22,10 @@ export interface IClusterConfigContainer {
   image: string;
   ports: {
     web: number;
-    custom: { [domain: string]: string };
+    custom?: { [domain: string]: string };
+  };
+  resources?: {
+    maxMemory?: number;
   };
   domains: string[];
   secrets: {[key: string]: string};

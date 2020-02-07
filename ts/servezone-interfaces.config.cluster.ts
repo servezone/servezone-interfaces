@@ -1,4 +1,4 @@
-import { IDockerRegistryInfo, IServiceRessources } from "./servezone-interfaces.config.docker";
+import { IDockerRegistryInfo, IServiceRessources } from './servezone-interfaces.config.docker';
 
 export interface IClusterConfig {
   name: string;
@@ -26,5 +26,5 @@ export interface IClusterConfigContainer {
   };
   resources?: IServiceRessources;
   domains: string[];
-  secrets: {[key: string]: string};
+  secrets: { [key: string]: string };
 }

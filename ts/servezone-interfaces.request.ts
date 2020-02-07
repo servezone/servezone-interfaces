@@ -13,5 +13,5 @@ export {
   networkRequests as network,
   routingRequests as routing,
   statusRequests as status,
-  versionRequests as version,
+  versionRequests as version
 };

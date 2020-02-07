@@ -4,11 +4,12 @@
     "npmAccessLevel": "public"
   },
   "gitzone": {
+    "projectType": "npm",
     "module": {
       "githost": "gitlab.com",
-      "gitscope": "servezone",
-      "gitrepo": "interfaces",
-      "shortDescription": "TypeScript interfaces to interact with servezone.",
+      "gitscope": "losslessone/npm",
+      "gitrepo": "loint-cluster",
+      "shortDescription": "TypeScript interfaces to for cluster communication",
       "npmPackagename": "@servezone/interfaces",
       "license": "MIT"
     }

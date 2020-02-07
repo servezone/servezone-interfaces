@@ -1,8 +1,8 @@
 {
-  "name": "@servezone/interfaces",
+  "name": "@losslessone_private/loint-cluster",
   "version": "2.0.60",
   "private": false,
-  "description": "TypeScript interfaces to interact with servezone.",
+  "description": "TypeScript interfaces to for cluster communication",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "author": "Lossless GmbH",
@@ -26,12 +26,12 @@
     "@tsclass/tsclass": "^2.0.12"
   },
   "files": [
-    "ts/*",
-    "ts_web/*",
-    "dist/*",
-    "dist_web/*",
-    "dist_ts_web/*",
-    "assets/*",
+    "ts/**/*",
+    "ts_web/**/*",
+    "dist/**/*",
+    "dist_web/**/*",
+    "dist_ts_web/**/*",
+    "assets/**/*",
     "cli.js",
     "npmextra.json",
     "readme.md"

@@ -1,6 +1,6 @@
 {
   "name": "@losslessone_private/loint-cluster",
-  "version": "2.0.63",
+  "version": "2.0.64",
   "private": false,
   "description": "TypeScript interfaces to for cluster communication",
   "main": "dist/index.js",

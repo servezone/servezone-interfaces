@@ -1,4 +1,4 @@
-import * as plugins from './servezone-interfaces.plugins';
+import * as plugins from './loint-cluster.plugins';
 
 export interface IRequest_Any_Cloudly_GetNetworkNodes {
   method: 'getNetworkNodes';

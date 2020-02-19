@@ -1,4 +1,4 @@
-import { IDockerRegistryInfo } from './servezone-interfaces.config.docker';
+import { IDockerRegistryInfo } from './loint-cluster.config.docker';
 
 export interface IServerConfig {
   type: 'server';

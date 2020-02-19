@@ -1,5 +1,5 @@
-import * as plugins from './servezone-interfaces.plugins';
-import { IVersionData } from './servezone-interfaces.version';
+import * as plugins from './loint-cluster.plugins';
+import { IVersionData } from './loint-cluster.version';
 
 export interface IReactionRequest_Cloudly_Coreflow_UpdateContainerVersions {
   method: 'postNewContainerVersions';

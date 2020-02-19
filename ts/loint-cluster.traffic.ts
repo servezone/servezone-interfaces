@@ -1,4 +1,4 @@
-import * as plugins from './servezone-interfaces.plugins';
+import * as plugins from './loint-cluster.plugins';
 
 interface IReverseProxyConfig extends plugins.tsclass.network.IReverseProxyConfig {}
 

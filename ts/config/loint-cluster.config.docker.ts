@@ -1,3 +1,5 @@
+import * as plugins from '../loint-cluster.plugins';
+
 export interface IDockerRegistryInfo {
   serveraddress: string;
   username: string;
@@ -6,10 +8,5 @@ export interface IDockerRegistryInfo {
 
 export interface IServiceRessources {
   memorySizeMB?: number;
-  volumeMounts: IVolumeMount[];
-}
-
-export interface IVolumeMount {
-  hostFsPath: string;
-  containerFsPath: string;
+  volumeMounts: plugins.tsclass.container.IVolumeMount[];
 }

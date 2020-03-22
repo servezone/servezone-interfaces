@@ -6,7 +6,7 @@ export interface IDockerRegistryInfo {
 
 export interface IServiceRessources {
   memorySizeMB?: number;
-  volumeMounts : IVolumeMount[];
+  volumeMounts: IVolumeMount[];
 }
 
 export interface IVolumeMount {

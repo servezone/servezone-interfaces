@@ -1,4 +1,4 @@
-import * as versionInterfaces from './loint-cluster.version';
+import * as versionInterfaces from '../loint-cluster.version';
 
 // for target cloudly
 export interface IRequest_Any_Cloudly_VersionManager_Update {

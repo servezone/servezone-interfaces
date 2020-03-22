@@ -1,0 +1,7 @@
+import * as plugins from './loint-cluster.plugins';
+
+export interface IEvent_Cloudly_ContainerVersionNotification extends plugins.typedrequestInterfaces.implementsTR<plugins.typedrequestInterfaces.ITypedEvent<plugins.tsclass.container.IContainer>, IEvent_Cloudly_ContainerVersionNotification> {
+  name: 'newContainerVersion';
+  uniqueEventId: string;
+  payload: plugins.tsclass.container.IContainer;
+}

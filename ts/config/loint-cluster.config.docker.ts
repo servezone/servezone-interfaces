@@ -5,5 +5,11 @@ export interface IDockerRegistryInfo {
 }
 
 export interface IServiceRessources {
-  memorySizeMB: number;
+  memorySizeMB?: number;
+  volumeMounts : IVolumeMount[];
+}
+
+export interface IVolumeMount {
+  hostFsPath: string;
+  containerFsPath: string;
 }

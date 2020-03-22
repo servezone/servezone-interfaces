@@ -1,4 +1,4 @@
-import * as plugins from './loint-cluster.plugins';
+import * as plugins from '../loint-cluster.plugins';
 
 export interface IRequest_Any_Cloudly_GetSslCertificate extends plugins.typedrequestInterfaces.implementsTR<
   plugins.typedrequestInterfaces.ITypedRequest,

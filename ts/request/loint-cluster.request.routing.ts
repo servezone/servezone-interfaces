@@ -1,4 +1,4 @@
-import { IReverseProxyConfig } from './loint-cluster.traffic';
+import { IReverseProxyConfig } from '../loint-cluster.traffic';
 
 export interface IRequest_Coreflow_Coretraffic_RoutingUpdate {
   method: 'updateRouting';

@@ -8,5 +8,5 @@ export interface IDockerRegistryInfo {
 
 export interface IServiceRessources {
   memorySizeMB?: number;
-  volumeMounts: plugins.tsclass.container.IVolumeMount[];
+  volumeMounts?: plugins.tsclass.container.IVolumeMount[];
 }

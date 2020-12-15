@@ -4,10 +4,12 @@ import * as configInterfaces from '../loint-cluster.config';
 export interface IRequest_Any_Cloudly_ConfigManager_GetServerConfig {
   method: 'getServerConfig';
   request: {
+    authToken: string;
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
   };
   response: {
-    configData: configInterfaces.IServerConfig;
+    status: "inPayload" | "retryIn1Minute"
+    configData?: configInterfaces.IServerConfig;
   };
 }
 

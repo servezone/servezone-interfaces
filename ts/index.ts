@@ -25,5 +25,5 @@ export {
   requestInterfaces as request,
   trafficInterfaces as traffic,
   versionInterfaces as version,
-  statusInterfaces as status
+  statusInterfaces as status,
 };

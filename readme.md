@@ -1,20 +1,27 @@
-# @losslessone/npm/loint-cloudly
+# @losslessone/npm/loint-cluster
 TypeScript interfaces to for cluster communication
 
 ## Availabililty and Links
 * [npmjs.org (npm package)](https://www.npmjs.com/package/@servezone/interfaces)
-* [gitlab.com (source)](https://gitlab.com/losslessone/npm/loint-cloudly)
-* [github.com (source mirror)](https://github.com/losslessone/npm/loint-cloudly)
-* [docs (typedoc)](https://losslessone/npm.gitlab.io/loint-cloudly/)
+* [gitlab.com (source)](https://gitlab.com/losslessone/npm/loint-cluster)
+* [github.com (source mirror)](https://github.com/losslessone/npm/loint-cluster)
+* [docs (typedoc)](https://losslessone/npm.gitlab.io/loint-cluster/)
 
 ## Status for master
-[![pipeline status](https://gitlab.com/losslessone/npm/loint-cloudly/badges/master/pipeline.svg)](https://gitlab.com/losslessone/npm/loint-cloudly/commits/master)
-[![coverage report](https://gitlab.com/losslessone/npm/loint-cloudly/badges/master/coverage.svg)](https://gitlab.com/losslessone/npm/loint-cloudly/commits/master)
-[![npm downloads per month](https://img.shields.io/npm/dm/@servezone/interfaces.svg)](https://www.npmjs.com/package/@servezone/interfaces)
-[![Known Vulnerabilities](https://snyk.io/test/npm/@servezone/interfaces/badge.svg)](https://snyk.io/test/npm/@servezone/interfaces)
-[![TypeScript](https://img.shields.io/badge/TypeScript->=%203.x-blue.svg)](https://nodejs.org/dist/latest-v10.x/docs/api/)
-[![node](https://img.shields.io/badge/node->=%2010.x.x-blue.svg)](https://nodejs.org/dist/latest-v10.x/docs/api/)
-[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-prettier-ff69b4.svg)](https://prettier.io/)
+
+Status Category | Status Badge
+-- | --
+GitLab Pipelines | [![pipeline status](https://gitlab.com/losslessone/npm/loint-cluster/badges/master/pipeline.svg)](https://lossless.cloud)
+GitLab Pipline Test Coverage | [![coverage report](https://gitlab.com/losslessone/npm/loint-cluster/badges/master/coverage.svg)](https://lossless.cloud)
+npm | [![npm downloads per month](https://badgen.net/npm/dy/@servezone/interfaces)](https://lossless.cloud)
+Snyk | [![Known Vulnerabilities](https://badgen.net/snyk/losslessone/npm/loint-cluster)](https://lossless.cloud)
+TypeScript Support | [![TypeScript](https://badgen.net/badge/TypeScript/>=%203.x/blue?icon=typescript)](https://lossless.cloud)
+node Support | [![node](https://img.shields.io/badge/node->=%2010.x.x-blue.svg)](https://nodejs.org/dist/latest-v10.x/docs/api/)
+Code Style | [![Code Style](https://badgen.net/badge/style/prettier/purple)](https://lossless.cloud)
+PackagePhobia (total standalone install weight) | [![PackagePhobia](https://badgen.net/packagephobia/install/@servezone/interfaces)](https://lossless.cloud)
+PackagePhobia (package size on registry) | [![PackagePhobia](https://badgen.net/packagephobia/publish/@servezone/interfaces)](https://lossless.cloud)
+BundlePhobia (total size when bundled) | [![BundlePhobia](https://badgen.net/bundlephobia/minzip/@servezone/interfaces)](https://lossless.cloud)
+Platform support | [![Supports Windows 10](https://badgen.net/badge/supports%20Windows%2010/yes/green?icon=windows)](https://lossless.cloud) [![Supports Mac OS X](https://badgen.net/badge/supports%20Mac%20OS%20X/yes/green?icon=apple)](https://lossless.cloud)
 
 ## Usage
 

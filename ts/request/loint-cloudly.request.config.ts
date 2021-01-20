@@ -8,7 +8,7 @@ export interface IRequest_Any_Cloudly_ConfigManager_GetServerConfig {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
   };
   response: {
-    status: "inPayload" | "retryIn1Minute"
+    status: 'inPayload' | 'retryIn1Minute';
     configData?: configInterfaces.IServerConfig;
   };
 }

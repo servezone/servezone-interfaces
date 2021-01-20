@@ -1,4 +1,4 @@
-import * as plugins from './loint-cluster.plugins';
+import * as plugins from './loint-cloudly.plugins';
 
 export interface IClusterStatus {
   name: string;

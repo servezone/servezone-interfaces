@@ -1,4 +1,4 @@
-import { IDockerRegistryInfo } from './loint-cluster.config.docker';
+import { IDockerRegistryInfo } from './loint-cloudly.config.docker';
 
 export interface IServerConfig {
   type: 'server';

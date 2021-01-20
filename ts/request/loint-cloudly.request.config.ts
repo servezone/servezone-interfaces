@@ -1,5 +1,5 @@
-import * as clusterInterfaces from '../loint-cluster.cluster';
-import * as configInterfaces from '../loint-cluster.config';
+import * as clusterInterfaces from '../loint-cloudly.cluster';
+import * as configInterfaces from '../loint-cloudly.config';
 
 export interface IRequest_Any_Cloudly_ConfigManager_GetServerConfig {
   method: 'getServerConfig';

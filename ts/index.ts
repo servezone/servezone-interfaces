@@ -1,23 +1,23 @@
 // cluster
-import * as clusterInterfaces from './loint-cluster.cluster';
+import * as clusterInterfaces from './loint-cloudly.cluster';
 
 // config
-import * as configInterfaces from './loint-cluster.config';
+import * as configInterfaces from './loint-cloudly.config';
 
 // event
-import * as eventInterfaces from './loint-cluster.event';
+import * as eventInterfaces from './loint-cloudly.event';
 
 // request
-import * as requestInterfaces from './loint-cluster.request';
+import * as requestInterfaces from './loint-cloudly.request';
 
 // traffic
-import * as trafficInterfaces from './loint-cluster.traffic';
+import * as trafficInterfaces from './loint-cloudly.traffic';
 
 // version
-import * as versionInterfaces from './loint-cluster.version';
+import * as versionInterfaces from './loint-cloudly.version';
 
 // status
-import * as statusInterfaces from './loint-cluster.status';
+import * as statusInterfaces from './loint-cloudly.status';
 
 export {
   clusterInterfaces as cluster,

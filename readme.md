@@ -1,15 +1,15 @@
-# @losslessone/npm/loint-cluster
+# @losslessone/npm/loint-cloudly
 TypeScript interfaces to for cluster communication
 
 ## Availabililty and Links
 * [npmjs.org (npm package)](https://www.npmjs.com/package/@servezone/interfaces)
-* [gitlab.com (source)](https://gitlab.com/losslessone/npm/loint-cluster)
-* [github.com (source mirror)](https://github.com/losslessone/npm/loint-cluster)
-* [docs (typedoc)](https://losslessone/npm.gitlab.io/loint-cluster/)
+* [gitlab.com (source)](https://gitlab.com/losslessone/npm/loint-cloudly)
+* [github.com (source mirror)](https://github.com/losslessone/npm/loint-cloudly)
+* [docs (typedoc)](https://losslessone/npm.gitlab.io/loint-cloudly/)
 
 ## Status for master
-[![pipeline status](https://gitlab.com/losslessone/npm/loint-cluster/badges/master/pipeline.svg)](https://gitlab.com/losslessone/npm/loint-cluster/commits/master)
-[![coverage report](https://gitlab.com/losslessone/npm/loint-cluster/badges/master/coverage.svg)](https://gitlab.com/losslessone/npm/loint-cluster/commits/master)
+[![pipeline status](https://gitlab.com/losslessone/npm/loint-cloudly/badges/master/pipeline.svg)](https://gitlab.com/losslessone/npm/loint-cloudly/commits/master)
+[![coverage report](https://gitlab.com/losslessone/npm/loint-cloudly/badges/master/coverage.svg)](https://gitlab.com/losslessone/npm/loint-cloudly/commits/master)
 [![npm downloads per month](https://img.shields.io/npm/dm/@servezone/interfaces.svg)](https://www.npmjs.com/package/@servezone/interfaces)
 [![Known Vulnerabilities](https://snyk.io/test/npm/@servezone/interfaces/badge.svg)](https://snyk.io/test/npm/@servezone/interfaces)
 [![TypeScript](https://img.shields.io/badge/TypeScript->=%203.x-blue.svg)](https://nodejs.org/dist/latest-v10.x/docs/api/)

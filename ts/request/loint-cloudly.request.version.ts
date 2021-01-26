@@ -1,8 +1,15 @@
 import * as versionInterfaces from '../loint-cloudly.version';
 
 // Containers
-export interface IRequest_Any_Cloudly_VersionManager_InformAboutNewContainerVersion {
-  method: 'informAboutNewContainerVersion';
+export interface IRequest_Any_Cloudly_VersionManager_InformCloudlyAboutNewContainerVersion {
+  method: 'informCloudlyAboutNewContainerVersion';
+  request: versionInterfaces.IContainerVersionData;
+  response: {};
+}
+
+// Containers
+export interface IRequest_Cloudly_Coreflow_VersionManager_InformCoreflowAboutNewContainerVersion {
+  method: 'informCoreflowAboutNewContainerVersion';
   request: versionInterfaces.IContainerVersionData;
   response: {};
 }

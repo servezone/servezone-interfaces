@@ -22,3 +22,11 @@ export interface IRequest_Any_Cloudly_ConfigManager_GetClusterConfig {
     configData: configInterfaces.IClusterConfig;
   };
 }
+
+export interface IRequest_Any_Cloudly_ConfigManager_PushClusterConfig {
+  method: 'pushClusterConfig';
+  request: {
+    configData: configInterfaces.IClusterConfig;
+  };
+  response: {};
+}

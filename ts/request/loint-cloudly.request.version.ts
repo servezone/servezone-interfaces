@@ -1,16 +1,16 @@
 import * as versionInterfaces from '../loint-cloudly.version';
 
-// for target cloudly
-export interface IRequest_Any_Cloudly_VersionManager_Update {
-  method: 'update';
-  request: versionInterfaces.IVersionData;
+// Containers
+export interface IRequest_Any_Cloudly_VersionManager_InformAboutNewContainerVersion {
+  method: 'informAboutNewContainerVersion';
+  request: versionInterfaces.IContainerVersionData;
   response: {};
 }
 
-export interface IRequest_Any_Cloudly_VersionManager_Get {
-  method: 'get';
+export interface IRequest_Any_Cloudly_VersionManager_GetLatestContainerVersion {
+  method: 'getLatestContainerVersion';
   request: {
     dockerImageUrl: string;
   };
-  response: versionInterfaces.IVersionData;
+  response: versionInterfaces.IContainerVersionData;
 }

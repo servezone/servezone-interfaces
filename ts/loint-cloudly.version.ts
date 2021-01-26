@@ -1,4 +1,4 @@
-export interface IVersionData {
+export interface IContainerVersionData {
   /**
    * the docker image url
    * example: registry.gitlab.com/hosttoday/ht-docker-node:latest

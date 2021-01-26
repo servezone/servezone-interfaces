@@ -14,3 +14,9 @@ export interface IRequest_Any_Cloudly_VersionManager_GetLatestContainerVersion {
   };
   response: versionInterfaces.IContainerVersionData;
 }
+
+export interface IRequest_Any_Cloudly_VersionManager_ListAllContainerVersions {
+  method: 'listAllContainerVersions';
+  request: {};
+  response: versionInterfaces.IContainerVersionData[];
+}

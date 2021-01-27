@@ -1,6 +1,6 @@
 {
   "name": "@losslessone_private/loint-cloudly",
-  "version": "2.0.77",
+  "version": "2.0.78",
   "private": false,
   "description": "TypeScript interfaces to for cluster communication",
   "main": "dist_ts/index.js",

@@ -5,6 +5,7 @@ import * as configRequests from './request/loint-cloudly.request.config';
 import * as identityRequests from './request/loint-cloudly.request.identity';
 import * as networkRequests from './request/loint-cloudly.request.network';
 import * as routingRequests from './request/loint-cloudly.request.routing';
+import * as serverRequests from './request/loint-cloudly.request.server';
 import * as statusRequests from './request/loint-cloudly.request.status';
 import * as versionRequests from './request/loint-cloudly.request.version';
 
@@ -14,6 +15,7 @@ export {
   identityRequests as identity,
   networkRequests as network,
   routingRequests as routing,
+  serverRequests as server,
   statusRequests as status,
   versionRequests as version,
 };

@@ -4,7 +4,6 @@ import * as configInterfaces from '../loint-cloudly.config';
 export interface IRequest_Any_Cloudly_ConfigManager_GetServerConfig {
   method: 'getServerConfig';
   request: {
-    authToken: string;
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
   };
   response: {

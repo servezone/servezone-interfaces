@@ -6,17 +6,7 @@ export interface IServerConfig {
   /**
    * a list of debian packages to be installed
    */
-  requiredPackages: string[];
-
-  /**
-   * needs reboot
-   */
-  reboot: boolean;
-
-  /**
-   * the time to check in again
-   */
-  checkInAgain: number;
+  requiredDebianPackages: string[];
 
   /**
    * a list of SSH keys to deploy

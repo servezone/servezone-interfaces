@@ -1,7 +1,12 @@
+import * as plugins from '../loint-cloudly.plugins';
 import * as clusterInterfaces from '../loint-cloudly.cluster';
 import * as configInterfaces from '../loint-cloudly.config';
 
-export interface IRequest_Any_Cloudly_ConfigManager_GetServerConfig {
+export interface IRequest_Any_Cloudly_GetServerConfig
+extends plugins.typedrequestInterfaces.implementsTR<
+  plugins.typedrequestInterfaces.ITypedRequest,
+  IRequest_Any_Cloudly_GetServerConfig
+> {
   method: 'getServerConfig';
   request: {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
@@ -11,7 +16,11 @@ export interface IRequest_Any_Cloudly_ConfigManager_GetServerConfig {
   };
 }
 
-export interface IRequest_Any_Cloudly_ConfigManager_GetClusterConfig {
+export interface IRequest_Any_Cloudly_GetClusterConfig
+extends plugins.typedrequestInterfaces.implementsTR<
+  plugins.typedrequestInterfaces.ITypedRequest,
+  IRequest_Any_Cloudly_GetClusterConfig
+> {
   method: 'getClusterConfig';
   request: {
     clusterIdentifier: clusterInterfaces.IClusterIdentifier;
@@ -21,10 +30,27 @@ export interface IRequest_Any_Cloudly_ConfigManager_GetClusterConfig {
   };
 }
 
-export interface IRequest_Any_Cloudly_ConfigManager_PushClusterConfig {
+export interface IRequest_Cloudly_Coreflow_PushClusterConfig
+extends plugins.typedrequestInterfaces.implementsTR<
+  plugins.typedrequestInterfaces.ITypedRequest,
+  IRequest_Cloudly_Coreflow_PushClusterConfig
+> {
   method: 'pushClusterConfig';
   request: {
     configData: configInterfaces.IClusterConfig;
   };
   response: {};
+}
+
+export interface IRequest_Cloudly_Coreflow_PushContainerUpdate
+extends plugins.typedrequestInterfaces.implementsTR<
+  plugins.typedrequestInterfaces.ITypedRequest,
+  IRequest_Cloudly_Coreflow_PushContainerUpdate
+> {
+  method: 'pushContainerUpdate'
+  request: {
+    configData: configInterfaces.IClusterConfig;
+    specificContainerConfigToUpdate: configInterfaces.IClusterConfigContainer;
+  };
+  response: {}
 }

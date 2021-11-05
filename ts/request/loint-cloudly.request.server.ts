@@ -1,5 +1,5 @@
 // link external types for reference
-import { IRequest_Any_Cloudly_ConfigManager_GetServerConfig } from './loint-cloudly.request.config'
+import { IRequest_Any_Cloudly_GetServerConfig } from './loint-cloudly.request.config'
 
 import * as plugins from '../loint-cloudly.plugins';
 

@@ -1,6 +1,6 @@
-import * as plugins from '../loint-cloudly.plugins';
-import * as clusterInterfaces from '../loint-cloudly.cluster';
-import * as configInterfaces from '../loint-cloudly.config';
+import * as plugins from '../loint-cloudly.plugins.js';
+import * as clusterInterfaces from '../loint-cloudly.cluster.js';
+import * as configInterfaces from '../loint-cloudly.config.js';
 
 export interface IRequest_Any_Cloudly_GetServerConfig
 extends plugins.typedrequestInterfaces.implementsTR<

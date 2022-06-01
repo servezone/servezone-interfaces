@@ -1,4 +1,4 @@
-import * as clusterInterfaces from '../loint-cloudly.cluster';
+import * as clusterInterfaces from '../loint-cloudly.cluster.js';
 
 /**
  * a status update dashboard

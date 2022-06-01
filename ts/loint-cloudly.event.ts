@@ -1,4 +1,4 @@
-import * as plugins from './loint-cloudly.plugins';
+import * as plugins from './loint-cloudly.plugins.js';
 
 export interface IEvent_Cloudly_ContainerVersionNotification
   extends plugins.typedrequestInterfaces.implementsTR<

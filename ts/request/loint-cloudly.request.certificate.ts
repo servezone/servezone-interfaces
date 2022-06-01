@@ -1,4 +1,4 @@
-import * as plugins from '../loint-cloudly.plugins';
+import * as plugins from '../loint-cloudly.plugins.js';
 
 export interface IRequest_Any_Cloudly_GetSslCertificate
   extends plugins.typedrequestInterfaces.implementsTR<

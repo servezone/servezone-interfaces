@@ -1,4 +1,4 @@
-import * as versionInterfaces from '../loint-cloudly.version';
+import * as versionInterfaces from '../loint-cloudly.version.js';
 
 // Containers
 export interface IRequest_Any_Cloudly_VersionManager_InformCloudlyAboutNewContainerVersion {

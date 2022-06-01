@@ -1,4 +1,4 @@
-import { IDockerRegistryInfo, IServiceRessources } from './loint-cloudly.config.docker';
+import { IDockerRegistryInfo, IServiceRessources } from './loint-cloudly.config.docker.js';
 
 export interface IClusterConfig {
   name: string;

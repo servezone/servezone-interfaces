@@ -1,5 +1,5 @@
-import * as plugins from '../loint-cloudly.plugins';
-import * as clusterInterfaces from '../loint-cloudly.cluster';
+import * as plugins from '../loint-cloudly.plugins.js';
+import * as clusterInterfaces from '../loint-cloudly.cluster.js';
 
 // ========
 // IDENTITY
